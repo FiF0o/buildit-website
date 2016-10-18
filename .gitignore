@@ -1,0 +1,8 @@
+dist/*
+assets.json
+deprecated
+test
+node_modules
+LICENSE
+.idea
+
