@@ -2,13 +2,22 @@ doctype html
 html(lang="eng")
     head
         title NPM Scripts Demo
-            script(src="#{locals['dist/main.js'].substr(5)}")
-            if compileDebug
-                script(src="//localhost:9091/livereload.js")
-            link(rel="stylesheet",href="#{locals['dist/main.css'].substr(5)}")
+        script(src="#{locals['dist/main.js'].substr(5)}")
+        if compileDebug
+            script(src="//localhost:9091/livereload.js")
+        // ca marche pas :(
+        link(rel="stylesheet",href="#{locals['dist/main.css'].substring(5)}")
         body
             h1 Hello world
             #container
+                br
+                p #{toto}
+                br
+                // ca marche :)
+                p #{locals['dist/main.css'].substring(5)}
+                br
+                p #{["dist/main.css"]}
+                br
                 p.
                     All of this content was created using various preprocessors and
                     compilers, as well as test tools and watchers, without using
