@@ -3,3 +3,6 @@
 var write = require('./write');
 window.addEventListener('DOMContentLoaded', write);
 console.log('hello world')
+
+import kikou from './kikou'
+console.log(kikou)

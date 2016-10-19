@@ -45,6 +45,9 @@
     "prebuild": "npm run clean -s",
     "build": "npm run build:scripts -s && npm run build:styles -s && npm run build:markup -s",
     "build:scripts": "browserify -d assets/scripts/main.js -p [minifyify --compressPath . --map main.js.map --output dist/main.js.map] | hashmark -n dist/main.js -s -l 8 -m assets.json \"dist/{name}{hash}{ext}\"",
+
+    "blabla": "babel assets/scripts/main.js --out-file dist/test/script-compiled.js --presets es2015 --source-maps",
+
     "build:styles": "node-sass assets/styles/main.sass -s -m -o dist/ && hashmark -s -l 8 -m assets.json dist/main.css \"dist/{name}{hash}{ext}\"",
     "build:markup": "pug assets/markup --obj assets.json --out dist --pretty",
     "test": "karma start --singleRun",
