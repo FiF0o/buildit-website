@@ -2,14 +2,23 @@ doctype html
 html(lang="eng")
     head
         title NPM Scripts Demo
-        script(src="#{locals['dist/main.js'].substr(5)}")
+        script(src=locals['dist/main.js'].substr(5))
         if compileDebug
             script(src="//localhost:9091/livereload.js")
         // ca marche pas :(
-        link(rel="stylesheet",href="#{locals['dist/main.css'].substring(5)}")
+        link(rel="stylesheet",href=locals['dist/main.css'].substring(5))
+        // ca marche
+        //link(rel="stylesheet", href=kikou2)
         body
+            - var kikou = "kikou var"
             h1 Hello world
             #container
+                p #{kikou}
+                script.
+                    console.log("not interpolated")
+                    // won't work
+                    console.log("#{interpolated}")
+
                 br
                 p #{toto}
                 br
@@ -17,7 +26,11 @@ html(lang="eng")
                 p #{locals['dist/main.css'].substring(5)}
                 br
                 p #{["dist/main.css"]}
+
                 br
                 p.
                     All of this content was created using various preprocessors and
+                    compilers, as well as test tools and watchers, without using
+                    compilers, as well as test tools and watchers, without using
+                    compilers, as well as test tools and watchers, without using
                     compilers, as well as test tools and watchers, without using
