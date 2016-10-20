@@ -1,4 +1,4 @@
 {
   "presets": ["es2015"],
-  "extends": "airbnb"
+  "extends": "./eslint.js"
 }
