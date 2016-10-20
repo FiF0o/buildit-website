@@ -6,7 +6,8 @@ html(lang="eng")
         script(src=locals['dist/main.js'].substr(5))
         if compileDebug
             script(src="//localhost:9091/livereload.js")
-        // gets hash from assets.json and trim path as main.css
+        // locals refers to pug variables when compiling the template
+         // gets hash from assets.json and trim path as main.css
         link(rel="stylesheet",href=locals['dist/main.css'].substring(5))
         // dev version
         //script(src="main.js")
@@ -23,7 +24,6 @@ html(lang="eng")
                 br
                 p #{toto}
                 br
-                // ca marche :)
                 p #{locals['dist/main.css'].substring(5)}
                 br
                 p #{["dist/main.css"]}
