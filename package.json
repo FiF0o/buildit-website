@@ -1,5 +1,5 @@
 {
-  "name": "Buildit website",
+  "name": "Buildit-website",
   "version": "1.0.0",
   "description": "buildit website, task manager inspired by how to use NPM as a build tool from @Keith Cirkel ",
   "main": "index.js",
@@ -63,7 +63,7 @@
     "deploy:prod": "s3-cli sync ./dist/ s3://example-com/prod-site/",
     "deploy:stage": "s3-cli sync ./dist/ s3://example-com/stage-site/",
     "serve": "http-server dist/ -p 9090 ",
-    "live-reload": "live-reload dist/ --port 9091",
+    "live-reload": "live-reload dist/ --port 9091 --delay 500",
     "dev": "npm run open:dev -s && parallelshell \"npm run live-reload -s\" \"npm run serve -s\" \"npm run watch -s\""
   },
   "eslintConfig": {
