@@ -47,9 +47,10 @@
     "build": "npm run build:scripts -s && npm run build:styles -s && npm run build:markup -s",
     "build:scripts-old": "browserify -d assets/scripts/main.js -p [minifyify --compressPath . --map main.js.map --output dist/main.js.map] | hashmark -n dist/main.js -s -l 8 -m assets.json \"dist/{name}{hash}{ext}\"",
 
-    "build:scripts": "browserify --debug assets/scripts/main.js --outfile dist/main.js -t [ babelify --comments false ]",
+    "build:scripts-dev": "browserify --debug assets/scripts/main.js --outfile dist/main.js -t [ babelify --comments false ]",
 
-    "build:scripts-broken" : "browserify --debug assets/scripts/main.js --outfile dist/test/bundle.js -p [minifyify --compressPath . --map main.js.map --output dist/main.js.map] -t [ babelify --comments true ]",
+    "build:scripts" : "browserify --debug assets/scripts/main.js -t [ babelify --comments true ] -p [minifyify --compressPath . --map main.js.map --output dist/main.js.map] | hashmark -n dist/main.js -s -l 8 -m assets.json \"dist/{name}{hash}{ext}\"",
+    "build:scripts-prod" : "browserify --debug assets/scripts/main.js -t [ babelify --comments true ] -p [minifyify --compressPath . --map main.js.map --output dist/main.js.map] | hashmark -n dist/test/main.js -s -l 8 -m assets.json \"dist/test/{name}{hash}{ext}\"",
 
     "build:styles": "node-sass assets/styles/main.sass -s -m -o dist/ && hashmark -s -l 8 -m assets.json dist/main.css \"dist/{name}{hash}{ext}\"",
     "build:markup": "pug assets/markup --obj assets.json --out dist --pretty",

@@ -2,16 +2,14 @@ doctype html
 html(lang="eng")
     head
         title NPM Scripts Demo
-        // prod version, process file -p task broken build:scripts-broken
-        //script(src=locals['dist/main.js'].substr(5))
+        // prod version
+        script(src=locals['dist/main.js'].substr(5))
         if compileDebug
             script(src="//localhost:9091/livereload.js")
-        // ca marche pas :(
         // gets hash from assets.json and trim path as main.css
         link(rel="stylesheet",href=locals['dist/main.css'].substring(5))
-        // ca marche
-        //link(rel="stylesheet", href=kikou2)
-        script(src="main.js")
+        // dev version
+        //script(src="main.js")
         body
             - var kikou = "kikou var"
             h1 Hello world
@@ -33,7 +31,4 @@ html(lang="eng")
                 br
                 p.
                     All of this content was created using various preprocessors and
-                    compilers, as well as test tools and watchers, without using
-                    compilers, as well as test tools and watchers, without using
-                    compilers, as well as test tools and watchers, without using
                     compilers, as well as test tools and watchers, without using
