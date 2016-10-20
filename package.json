@@ -10,6 +10,7 @@
     "babel-core": "^6.17.0",
     "babel-eslint": "^7.0.0",
     "babel-preset-es2015": "^6.16.0",
+    "babelify": "^7.3.0",
     "browserify": "^13.1.0",
     "eslint": "^3.8.1",
     "eslint-config-airbnb": "^12.0.0",
@@ -44,9 +45,11 @@
     "clean": "rimraf dist/*",
     "prebuild": "npm run clean -s",
     "build": "npm run build:scripts -s && npm run build:styles -s && npm run build:markup -s",
-    "build:scripts": "browserify -d assets/scripts/main.js -p [minifyify --compressPath . --map main.js.map --output dist/main.js.map] | hashmark -n dist/main.js -s -l 8 -m assets.json \"dist/{name}{hash}{ext}\"",
+    "build:scripts-old": "browserify -d assets/scripts/main.js -p [minifyify --compressPath . --map main.js.map --output dist/main.js.map] | hashmark -n dist/main.js -s -l 8 -m assets.json \"dist/{name}{hash}{ext}\"",
 
-    "blabla": "babel assets/scripts/main.js --out-file dist/test/script-compiled.js --presets es2015 --source-maps",
+    "build:scripts": "browserify --debug assets/scripts/main.js --outfile dist/main.js -t [ babelify --comments false ]",
+
+    "build:scripts-broken" : "browserify --debug assets/scripts/main.js --outfile dist/test/bundle.js -p [minifyify --compressPath . --map main.js.map --output dist/main.js.map] -t [ babelify --comments true ]",
 
     "build:styles": "node-sass assets/styles/main.sass -s -m -o dist/ && hashmark -s -l 8 -m assets.json dist/main.css \"dist/{name}{hash}{ext}\"",
     "build:markup": "pug assets/markup --obj assets.json --out dist --pretty",
