@@ -1,9 +1,9 @@
 {
-  "name": "npm-scripts-example",
+  "name": "Buildit website",
   "version": "1.0.0",
-  "description": "An example of how to use npm scripts over a build tool like Grunt or Gulp",
+  "description": "buildit website, task manager inspired by how to use NPM as a build tool from @Keith Cirkel ",
   "main": "index.js",
-  "author": "Keith Cirkel <npm@keithcirkel.co.uk> (http://keithcirkel.co.uk/)",
+  "author": "Jonathan Lazarini <jonathan.lazarini@wipro.com>",
   "license": "MIT",
   "devDependencies": {
     "babel-cli": "^6.16.0",
