@@ -2,6 +2,8 @@ doctype html
 html(lang="eng")
     head
         title NPM Scripts Demo
+        script(src="https://code.jquery.com/jquery-3.1.1.min.js",integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=",crossorigin="anonymous")
+
         // prod version
         script(src=locals['dist/main.js'].substr(5))
         if compileDebug

@@ -8,3 +8,7 @@ console.log('hello world')
 import kikou from './kikou'
 console.log(kikou)
 
+import { api as ap} from './semantic-ui/api'
+console.log('before import')
+console.log(ap)
+console.log('after import')
