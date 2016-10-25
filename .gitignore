@@ -6,5 +6,6 @@ node_modules
 LICENSE
 .idea
 npm-debug.log
+.sass-cache/
 
 
