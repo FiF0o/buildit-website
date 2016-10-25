@@ -50,6 +50,8 @@
     "build:scripts-old": "browserify -d assets/scripts/main.js -p [minifyify --compressPath . --map main.js.map --output dist/main.js.map] | hashmark -n dist/main.js -s -l 8 -m assets.json \"dist/{name}{hash}{ext}\"",
     "build:scripts-dev": "browserify --debug assets/scripts/main.js --outfile dist/main.js -t [ babelify --comments false ]",
 
+    "fix:gem":"brew uninstall xz",
+    "update:gem": "sudo gem update --system && bundle install",
     "install:semantic-ui": "gem install semantic-ui-sass",
     "build:semantic-ui": "compass install semantic-ui",
     "compile:semantic-ui": "compass compile",
