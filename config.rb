@@ -23,6 +23,9 @@ require 'semantic-ui-sass'
  images_path = "dist/images"
  javascripts_dir = "assets/scripts"
 
+ # running with gem compass-sourcemaps
+ sass_options = {:sourcemap => true}
+
 # The directory where the font files are kept. Standalone projects will default to <css_dir>/fonts. Rails projects will default to "public/fonts".
  fonts_path = "assets/fonts"
 
