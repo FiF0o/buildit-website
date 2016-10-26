@@ -9,3 +9,14 @@ console.log(kikou)
 
 // import semanticUi from './semantic-ui'
 // console.log(semanticUi)
+// import accordion from './semantic-ui/accordion'
+// console.log('accordion: ',accordion)
+
+// import jQuery from 'jquery'
+// window.$ = window.jQuery = jQuery
+// global.jQuery = require('jquery');
+
+console.log('$: ',$)
+$('.ui.accordion')
+  .accordion()
+;
