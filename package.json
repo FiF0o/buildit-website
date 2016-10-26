@@ -64,6 +64,7 @@
     "build:scripts-prod": "browserify --debug assets/scripts/main.js -t [ babelify --comments true ] -p [minifyify --compressPath . --map main.js.map --output dist/main.js.map] | hashmark -n dist/test/main.js -s -l 8 -m assets.json \"dist/test/{name}{hash}{ext}\"",
     "build:styles": "node-sass assets/styles/main.sass --source-map true -o dist/ && hashmark -s -l 8 -m assets.json dist/main.css \"dist/{name}{hash}{ext}\"",
     "build:markup": "pug assets/markup --obj assets.json --out dist -p assets/markup/includes --pretty",
+    "build:images":"cp -R assets/images dist/images",
 
 
     "sass:lint":"sass-lint -c /.sass-lint.yml 'assets/styles/**/*.sass' -v -q",

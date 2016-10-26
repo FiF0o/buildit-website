@@ -18,9 +18,9 @@ require 'semantic-ui-sass'
  http_path = "/dist"
  css_dir = "/dist"
  sass_dir = "assets/styles"
- images_dir = "assets/images"
+ images_dir = "dist/images"
  generated_images_dir = "dist/images"
- images_path = "assets/images"
+ images_path = "dist/images"
  javascripts_dir = "assets/scripts"
 
 # The directory where the font files are kept. Standalone projects will default to <css_dir>/fonts. Rails projects will default to "public/fonts".
