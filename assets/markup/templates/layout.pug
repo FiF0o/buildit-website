@@ -3,15 +3,22 @@
 html
   head
     title My Site - #{title}
-    block scripts
-        script(src="https://code.jquery.com/jquery-3.1.1.min.js",integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=",crossorigin="anonymous")
+    // locals refers to pug variables when compiling the template
+    // gets hash from assets.json and trim path as main.css
+    // prod
+    // link(rel="stylesheet",href=locals['dist/main.css'].substring(5))
+    // dev version
+    link(rel="stylesheet",href="main.css")
+
   body
     block content
         h1 Hello world
         #container
             p container content here
+    block scripts
+        script(src="https://code.jquery.com/jquery-3.1.1.min.js",integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=",crossorigin="anonymous")
 
     block foot
-      #footer
-        p some footer content
+        #footer
+            p some footer content
 

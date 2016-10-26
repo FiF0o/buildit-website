@@ -6,7 +6,8 @@ gem "bundler"
 gem "nokogiri"
 gem "autoprefixer-rails"
 # gem "sass"
-gem 'sass', '3.3.0.alpha.149'
+# gem 'sass', '3.3.0.alpha.149'
+gem 'sass', '3.3.0.alpha.134'
 gem "compass-import-once"
 # gem "compass"
 gem 'compass', '0.12.2'
