@@ -1,0 +1,13 @@
+script(src="https://code.jquery.com/jquery-3.1.1.min.js",integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=",crossorigin="anonymous")
+// prod version
+script(src=locals['dist/main.js'].substr(5))
+if compileDebug
+    script(src="//localhost:9091/livereload.js")
+// locals refers to pug variables when compiling the template
+// gets hash from assets.json and trim path as main.css
+// prod
+//link(rel="stylesheet",href=locals['dist/main.css'].substring(5))
+// dev
+link(rel="stylesheet",href="main.css")
+// dev version
+//script(src="main.js")

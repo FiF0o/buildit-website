@@ -1,0 +1,17 @@
+//
+   Created by jonlazarini on 26/10/16.
+html
+  head
+    title My Site - #{title}
+    block scripts
+        script(src="https://code.jquery.com/jquery-3.1.1.min.js",integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=",crossorigin="anonymous")
+  body
+    block content
+        h1 Hello world
+        #container
+            p container content here
+
+    block foot
+      #footer
+        p some footer content
+

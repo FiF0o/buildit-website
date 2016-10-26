@@ -1,39 +1,30 @@
-doctype html
-html(lang="eng")
-    head
-        title NPM Scripts Demo
-        script(src="https://code.jquery.com/jquery-3.1.1.min.js",integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=",crossorigin="anonymous")
+extends templates/layout
 
-        // prod version
-        script(src=locals['dist/main.js'].substr(5))
-        if compileDebug
-            script(src="//localhost:9091/livereload.js")
-        // locals refers to pug variables when compiling the template
-        // gets hash from assets.json and trim path as main.css
-        // prod
-        link(rel="stylesheet",href=locals['dist/main.css'].substring(5))
-        // dev
-        link(rel="stylesheet",href="main.css")
-        // dev version
-        //script(src="main.js")
-        body
-            - var kikou = "kikou var"
-            h1 Hello world
-            #container
-                p #{kikou}
-                script.
-                    console.log("not interpolated")
-                    // won't work
-                    console.log("#{interpolated}")
+block scripts
+    include includes/scripts
 
-                br
-                p #{toto}
-                br
-                p #{locals['dist/main.css'].substring(5)}
-                br
-                p #{["dist/main.css"]}
+block content
+    h1 Override h1?
+    - var kikou = "kikou var"
+    #container
+        p #{kikou}
+        script.
+            console.log("not interpolated")
+            // won't work
+            console.log("#{interpolated}")
 
-                br
-                p.
-                    All of this content was created using various preprocessors and
-                    compilers, as well as test tools and watchers, without using
+        br
+        p #{toto}
+        br
+        p #{locals['dist/main.css'].substring(5)}
+        br
+        p #{["dist/main.css"]}
+
+        br
+        p.
+            All of this content was created using various preprocessors and
+            compilers, as well as test tools and watchers, without using
+
+block foot
+    include includes/foot
+    p another line here
