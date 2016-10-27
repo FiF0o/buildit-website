@@ -1,12 +1,10 @@
 extends templates/layout
 
-block content
-    h1 Override h1?
-    #container
-        .ui.grid.bloc
-            .sixteen.wide.column
-                | 100%
+block header
+    include includes/head
 
+block content
+    #container
         .ui.two.column.stackable.centered.grid.container
             .column
                 p.
@@ -19,10 +17,6 @@ block content
             .column
                 p.
                     1 up
-
-        .ui.grid.bloc
-            .sixteen.wide.column
-                | 100%
 
 block foot
     include includes/foot
