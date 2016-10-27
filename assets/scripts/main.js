@@ -2,16 +2,16 @@
 import accordion from './semantic-ui/accordion'
 // var write = require('./write');
 // window.addEventListener('DOMContentLoaded', write);
-
 /**
  * jQuery is a global which semantic-ui expects to receive as jQuery (the
  * global)
  * reassigns global jQuery as a local var $
+ * e.g. var $ = jQuery ...
 * */
 //TODO add rule for global in eslint as it will crash as linting does not
   // expect globals in modules...
 
-var $ = jQuery
+var $ = jQuery = window.$ = window.jQuery
 
 // **** Beginning code ****
 $('.ui.accordion').accordion();
