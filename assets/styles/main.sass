@@ -1,41 +1,37 @@
-// loads library
 @import semantic-ui
 
-//@import semantic-ui/globals/all
-//@import elements/_button
-
-
-// 1 - Imports to override bootstrap vars
+/************************************/
+/******** OVERRIDES START HERE ******/
+/************************************/
 /*
   Source code of components is available here
   https://github.com/doabit/semantic-ui-sass/tree/master/app/assets/stylesheets
 
 
+// 0 - Imports to override semantic-ui global vars
+// @import globals/
 
 
-// 2 - Imports from bootstrap components for overrides
+// 1 - Imports to override semantic-ui elements
+// @import elements/
+
+
+
+// 2 - Imports from semantic-ui collections for overrides
+@import collections/_bloc
+
+
+
+// 3 - Imports from to add custom properties to semantic-ui modules
+//@import modules/
+
+
+
+// 4 - Imports to add css at a views level
+// @import views/
+
+
+
+// 5 - Will add css properties based on a page
 /*
-  Only modifying less properties for changing bootstrap default styling
-  Need to override properties of bootstrap and avoid creating extra classes
-
-
-// 3 - Imports from to add custom properties to Bootstrap components ; 2 - section
-/*
-  Will add or override properties from default bootstrap to match the design
-
-
-// 4 - Imports to add css at a page level
-/*
-  Will add css properties based on a page
-
-
-// 5 - Global overrides
-
-// library overrides
-h1
-  color: orange
-
-// custom classes
-.ui.grid.bloc
-  padding: 2em
-  text-align: center
+  must be avoided as much as possible - please use @extend to keep CSS DRY
