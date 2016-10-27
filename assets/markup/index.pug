@@ -2,25 +2,9 @@ extends templates/layout
 
 block content
     h1 Override h1?
-    - var kikou = "kikou var"
     #container
-        p #{kikou}
-        script.
-            console.log("not interpolated")
-            // won't work
-            console.log("#{interpolated}")
-
-        br
-        p #{toto}
-        br
-        p #{locals['dist/main.css'].substring(5)}
-        br
-        p #{["dist/main.css"]}
-
-        br
-        p.
-            All of this content was created using various preprocessors and
-            compilers, as well as test tools and watchers, without using
+        p
+            | Text p
 
         .ui.accordion
             .active.title
@@ -46,7 +30,6 @@ block content
 
 block foot
     include includes/foot
-    p another line here
 
 block scripts
     include includes/scripts
