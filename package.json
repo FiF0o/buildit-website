@@ -16,7 +16,7 @@
     "eslint-config-airbnb": "^12.0.0",
     "eslint-config-airbnb-base": "^8.0.0",
     "eslint-plugin-flowtype": "^2.20.0",
-    "eslint-plugin-import": "^2.0.1",
+    "eslint-plugin-import": "^1.16.0",
     "eslint-plugin-jsx-a11y": "^2.2.3",
     "eslint-plugin-react": "^6.4.1",
     "hashmark": "^2.0.0",
@@ -50,7 +50,6 @@
     "build": "npm run build:scripts -s && npm run build:markup -s && npm run build:styles",
     "build:scripts-old": "browserify -d assets/scripts/main.js -p [minifyify --compressPath . --map main.js.map --output dist/main.js.map] | hashmark -n dist/main.js -s -l 8 -m assets.json \"dist/{name}{hash}{ext}\"",
     "build:scripts-dev": "browserify --debug assets/scripts/main.js --outfile dist/main.js -t [ babelify --comments false ]",
-
     "fix:gem": "brew uninstall xz",
     "ruby:config": "gem install bundler",
     "update:gem": "sudo gem update --system && bundle install",
@@ -58,9 +57,7 @@
     "install:gems": "bundle install",
     "build:semantic-ui": "compass install semantic-ui",
     "sass-convert": "sass-convert -R --from scss --to sass assets/styles && rm assets/styles/styles.scss",
-
-    "toto":"compass compile --output-style compressed && mkdir dist/tmp && cp dist/main.css dist/tmp/main.css && node_modules/.bin/hashmark -s -l 8 -m assets.json \"dist/tmp/main.css\" \"dist/tmp/{name}{hash}{ext}\"",
-
+    "toto": "compass compile --output-style compressed && mkdir dist/tmp && cp dist/main.css dist/tmp/main.css && node_modules/.bin/hashmark -s -l 8 -m assets.json \"dist/tmp/main.css\" \"dist/tmp/{name}{hash}{ext}\"",
     "build:styles": "compass compile --output-style compressed",
     "build:styles-old": "node-sass assets/styles/main.sass --source-map true -o dist/ && hashmark -s -l 8 -m assets.json dist/main.css \"dist/{name}{hash}{ext}\"",
     "watch:semantic-ui": "compass watch assets/styles --poll & npm run live-reload",

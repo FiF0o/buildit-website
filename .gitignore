@@ -1,5 +1,5 @@
 dist/*
-assets.json
+# assets.json
 deprecated
 test
 node_modules

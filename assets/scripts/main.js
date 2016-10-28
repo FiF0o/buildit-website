@@ -1,8 +1,9 @@
 //TODO Add preinstall hook to set up ruby and sass gem, "preinstall": ""
 import accordion from './semantic-ui/accordion'
 /**
- * jQuery is a global which semantic-ui expects to receive as jQuery (the
- * global)
+ * jQuery is a global which is augmented by semantic-ui library and expects to
+ * receive it (the global) as jQuery and not $
+ *
  * reassigns global jQuery as a local var $
  * e.g. var $ = jQuery ...
 * */
