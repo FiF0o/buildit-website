@@ -1,3 +1,7 @@
+# Fix error: Invalid US-ASCII character "\xE2"
+# or add @charset "UTF-8" at the beginning of every file which is included and the main file resolved
+Encoding.default_external = "utf-8"
+
 require 'semantic-ui-sass'
 # compass install semantic-ui
 
