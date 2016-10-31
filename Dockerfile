@@ -23,3 +23,5 @@ RUN mkdir -p $WORKSPACE && cp -a /tmp/node_modules $WORKSPACE/
 
 # Path added to the image
 ADD . $WORKSPACE
+
+# CMD npm run build
