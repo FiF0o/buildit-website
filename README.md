@@ -11,6 +11,11 @@ Build: `npm run build`
 ## Notes
 Some notes to be added
 
+- Docker
+
+exposes port :3030 from container to the client which maps http-server (:9090) for live reload
+`docker run -p 3030:9090 -itd jonlazarini/buildit-website npm run serve`
+
 
 -
 Build process inspired by [how to use NPM as a build tool][post] from Keith Cirkel.
