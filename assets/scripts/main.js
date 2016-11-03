@@ -32,19 +32,20 @@ window.global = "global"
 // $('.masthead').visibility('refresh')
 
 
-// attaches toggle event of sidebar to .toc.item to menu open
+// // attaches toggle event of sidebar to .toc.item to menu open
 // $('.ui.sidebar')
-  // .sidebar('attach events', '.toc.item')
-  // .sidebar({
-  //   // context in which the sidebar will appear
-  //   context: $('.pusher'),
-  // })
+//   // .sidebar('attach events', '.toc.item')
+//   .sidebar({
+//     // context in which the sidebar will appear
+//     context: $('.pusher'),
+//   })
 
 
 // init sidebar behavior
 $('.toc.item').click(function() {
   $('.ui.sidebar')
-    .sidebar('toggle');
+    .sidebar('toggle',
+    );
 })
 
 // init sticky content
@@ -63,8 +64,8 @@ $('img.transition.visible')
    duration: ' 1000',
    onTopVisible :function(calcs) {
      // lazy-loading - adds data-src attribute to the img tag
-     window.getImg()
-     window.showContent()
+     getImg()
+     showContent()
    }
  })
 
@@ -82,7 +83,6 @@ var showContent = function () {
     $('.demo.items .image img').visibility('refresh')
   }, 500)
 }
-window.showContent = showContent
 
 
 var arImg = ['images/avatar/stevie.jpg', 'images/avatar/nan.jpg', 'images/avatar/tom.jpg']
@@ -93,4 +93,3 @@ var getImg = function(){
   })
 
 }
-window.getImg = getImg
