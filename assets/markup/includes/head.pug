@@ -1,56 +1,22 @@
-//header#header
-//    .ui.grid.bloc
-//        .sixteen.wide.column
-//            | 100%
-
 header#header
     .ui.inverted.vertical.masthead.center.aligned.segment
-        .ui.container
-            .ui.large.secondary.inverted.pointing.menu
-                a.toc.item
-                    i.sidebar.icon
-                a.image.item
-                    img#logo(src='images/buildit-logo-white.svg', alt='Buildit', data-svg-fallback='images/buildit-logo-white.png')
-                a.active.item(href='index.html') Home
-                a.item(href='buildit.html') Company
-                a.item(href='careers.html') Careers
-                .right.item
-                    a.ui.inverted.button Github
-        .ui.text.container
-            h1.ui.inverted.header
-                img(src='images/buildit-logo-only-paths.svg')
-                |         the future belongs to those who make
 
+        .ui.sticky.fixed.top
 
+            .ui.container
+                .ui.large.secondary.inverted.pointing.menu
+                    a.toc.item
+                        i.sidebar.icon
+                    a.image.item
+                        img#logo(src='images/buildit-logo-white.svg', alt='Buildit', data-svg-fallback='images/buildit-logo-white.png')
 
-//.ui.vertical.inverted.sidebar.menu
-//    .image
-//        img#logo(src='images/buildit-logo-white.svg', alt='Buildit', data-svg-fallback='images/buildit-logo-white.png')
-//    a.active.item(href='index.html') Home
-//    a.item(href='buildit.html') Company
-//    a.item(href='careers.html') Careers
-//    a.item Github
-
-
-
-    //.ui.fixed.inverted.menu
-    //    .ui.container
-    //        a.header.item(href='#')
-    //            img.logo(src='images/logo.png', data-pin-nopin='true')
-    //            |         Project Name
-    //        a.item(href='#') Home
-    //        .ui.simple.dropdown.item
-    //            | Dropdown
-    //            i.dropdown.icon
-    //            .menu
-    //                a.item(href='#') Link Item
-    //                a.item(href='#') Link Item
-    //                .divider
-    //                .header Header Item
-    //                .item
-    //                    i.dropdown.icon
-    //                    |             Sub Menu
-    //                    .menu
-    //                        a.item(href='#') Link Item
-    //                        a.item(href='#') Link Item
-    //                a.item(href='#') Link Item
+                    .right.item
+                        a.active.item(href='index.html') Home
+                        a.item(href='buildit.html') Company
+                        a.item(href='careers.html') Careers
+                    //.right.item
+                    //    a.ui.inverted.button Github
+            .ui.text.container
+                h1.ui.inverted.header
+                    //img(src='images/buildit-logo-only-paths.svg')
+                    |         the future belongs to those who make
