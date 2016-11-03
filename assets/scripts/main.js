@@ -50,7 +50,7 @@ $('.toc.item').click(function() {
 // init sticky content
 $('.ui.sticky')
   .sticky({
-    // context: '#sticky-content'
+    context: '#sticky-content'
   })
 
 // init images lazy-loading

@@ -11,24 +11,24 @@ html
     link(rel="stylesheet",href="main.css")
 
   body#sticky-content
+    .pusher
+        block sidebar
+            #sidebar
+                li
+                    a link1
+                    a link2
+                    a link3
 
-    block sidebar
-        #sidebar
-            li
-                a link1
-                a link2
-                a link3
+        block header
+          p header is here
 
-    block header
-      p header is here
+        block content
+            #container
+                p content is here
 
-    block content
-        #container
-            p content is here
+        block foot
+            #footer
+                p some footer content
 
-    block foot
-        #footer
-            p some footer content
-
-    block scripts
-        script(src="https://code.jquery.com/jquery-3.1.1.min.js",integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=",crossorigin="anonymous")
+        block scripts
+            script(src="https://code.jquery.com/jquery-3.1.1.min.js",integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=",crossorigin="anonymous")
