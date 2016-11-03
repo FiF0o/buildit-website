@@ -18,17 +18,54 @@ block content
     //            p.
     //                1 up
     #container.ui.main.text.container
-        h1.ui.header Semantic UI Fixed Template
-        p This is a basic fixed menu template using fixed size containers.
-        p
-            | A text container is used for the main container, which is useful for single column layouts
-        img.wireframe(src='assets/images/wireframe/media-paragraph.png')
-        img.wireframe(src='assets/images/wireframe/paragraph.png')
-        img.wireframe(src='assets/images/wireframe/paragraph.png')
-        img.wireframe(src='assets/images/wireframe/paragraph.png')
-        img.wireframe(src='assets/images/wireframe/paragraph.png')
-        img.wireframe(src='assets/images/wireframe/paragraph.png')
-        img.wireframe(src='assets/images/wireframe/paragraph.png')
+        .pusher
+            h1.ui.header Semantic UI Fixed Template
+            p This is a basic fixed menu template using fixed size containers.
+            p
+                | A text container is used for the main container, which is useful for single column layouts
+            img.wireframe(src='images/wireframe/media-paragraph.png')
+            img.wireframe(src='images/wireframe/paragraph.png')
+            img.wireframe(src='images/wireframe/paragraph.png')
+            img.wireframe(src='images/wireframe/paragraph.png')
+            img.wireframe(src='images/wireframe/paragraph.png')
+            img.wireframe(src='images/wireframe/paragraph.png')
+            img.wireframe(src='images/wireframe/paragraph.png')
+
+
+            .ui.divided.demo.items
+                .item
+                    .image
+                        img.transition.visible(src='images/wireframe/square-image.png', data-src='images/avatar/stevie.jpg')
+                    .content
+                        h2.ui.header Stevie
+                        p
+                        .ui.primary.button Add Friend
+                        .ui.right.floated.button
+                            | View
+                            i.right.chevron.icon
+                .item
+                    // <div class="ui active move left reveal">
+                    .image
+                        img.transition.visible(src='images/wireframe/square-image.png', data-src='images/avatar/stevie.jpg')
+                    .content
+                        h2.ui.header Stevie
+                        p
+                        .ui.primary.button Add Friend
+                        .ui.right.floated.button
+                            | View
+                            i.right.chevron.icon
+                    // </div>
+                .item
+                    .image
+                        img.transition.visible(src='images/wireframe/square-image.png', data-src='images/avatar/stevie.jpg')
+                    .content
+                        h2.ui.header Stevie
+                        p
+                        .ui.primary.button Add Friend
+                        .ui.right.floated.button
+                            | View
+                            i.right.chevron.icon
+
 
 block foot
     include includes/foot

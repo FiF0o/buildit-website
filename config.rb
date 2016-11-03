@@ -15,19 +15,23 @@ require 'compass/import-once/activate'
 # images_path
 # http_images_path =
 
-http_path = "/dist"
-css_dir = "/dist"
+# server
+# http_path = "/dist"
+css_dir = "dist"
 sass_dir = "assets/styles"
 images_dir = "dist/images"
 generated_images_dir = "dist/images"
 images_path = "dist/images"
 javascripts_dir = "assets/scripts"
 
+# relative to <css_dir> - will be dist/fonts
+fonts_dir = "fonts"
+
  # running with gem compass-sourcemaps
 sass_options = {:sourcemap => true}
 
 # The directory where the font files are kept. Standalone projects will default to <css_dir>/fonts. Rails projects will default to "public/fonts".
- fonts_path = "assets/fonts"
+# fonts_path = "fonts"
 
 # The full http path to font files on the web server.
 # http_fonts_path = ""
