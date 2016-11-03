@@ -31,26 +31,17 @@ window.global = "global"
 //   });
 // $('.masthead').visibility('refresh')
 
-
-// // attaches toggle event of sidebar to .toc.item to menu open
-// $('.ui.sidebar')
-//   // .sidebar('attach events', '.toc.item')
-//   .sidebar({
-//     // context in which the sidebar will appear
-//     context: $('.pusher'),
-//   })
-
-
 // init sidebar behavior
 $('.toc.item').click(function() {
   $('.ui.sidebar')
-    .sidebar('toggle',
+    .sidebar('toggle'
     );
 })
 
 // init sticky content
 $('.ui.sticky')
   .sticky({
+    // specifies the context where elements should stop sticking
     context: '#sticky-content'
   })
 
