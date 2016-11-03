@@ -1,7 +1,7 @@
 //TODO Add preinstall hook to set up ruby and sass gem, "preinstall": ""
 //import accordion from './semantic-ui/accordion'
 import visibility from './semantic-ui/visibility'
-console.log(visibility)
+
 /**
  * jQuery is a global which is augmented by semantic-ui library and expects to
  * receive it (the global) as jQuery and not $
@@ -16,7 +16,6 @@ var $ = jQuery = window.$ = window.jQuery
 window.global = "global"
 // **** Beginning code ****
 // debug test init
-// $('.ui.accordion').accordion();
 
 $('.masthead')
   .visibility({
@@ -27,8 +26,7 @@ $('.masthead')
     onBottomPassedReverse: function() {
       $('.fixed.menu').transition('fade out');
     }
-  })
-;
+  });
 $('.masthead').visibility('refresh')
 
 // create sidebar and attach to menu open
@@ -39,17 +37,11 @@ $('.ui.sidebar')
 var arImg = ['images/avatar/stevie.jpg', 'images/avatar/toto.jpg', 'images/avatar/stevie3.jpg']
 
 var getImg = function(){
-  // var $elImg = $(".ui.divided.demo.items")
-  // console.log('$elImg: ',$elImg)
+  // adds a custom data-attribute to the markups with each()
+  $('img.transition.visible').each( function( index, value ) {
+    $(value).attr('data-test', arImg[index]);
+  });
 
-  for (var i = 0; i < arImg.length; i++ ) {
-    console.log('array images', arImg[i]);
-    // adds a custom data-attribute to the markup
-    var $yo = $('img.transition.visible').attr('data-test', arImg[i])
-    console.log('yo: ', $yo)
-    // $elImg.append($yo)
-
-  }
 }
 window.getImg = getImg
 // adds image - should be replaced with appropriate image
@@ -88,4 +80,3 @@ var showContent = function () {
   }, 1000)
 }
 window.showContent = showContent
-console.log('wtf')
