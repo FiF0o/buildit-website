@@ -1,8 +1,8 @@
 //TODO Add preinstall hook to set up ruby and sass gem, "preinstall": ""
-//import accordion from './semantic-ui/accordion'
 import visibility from './semantic-ui/visibility'
 import sticky from './semantic-ui/sticky'
 import sidebar from './semantic-ui/sidebar'
+import tab from './semantic-ui/tab'
 
 /**
  * jQuery is a global which is augmented by semantic-ui library and expects to
@@ -34,16 +34,51 @@ window.global = "global"
 // init sidebar behavior
 $('.toc.item').click(function() {
   $('.ui.sidebar')
-    .sidebar('toggle'
-    );
-})
+    .sidebar('toggle')
+}).transition('pulse')
+
+// $('.masthead').height(560)
+
 
 // init sticky content
-$('.ui.sticky')
+$('.sticky')
   .sticky({
     // specifies the context where elements should stop sticking
-    context: '#sticky-content'
+    // context: '#sticky-content',
+    //TODO change context to footer, remove .ui.contanier and add wrap it in
+    //TODO Change .sticky to row and Add styling to nav
+    context: '#footer',
+
+    onStick: function() {
+      console.log('onStick fired')
+      $('.sticky').addClass('stuck')
+      $('.sticky').find('.pointing.menu').removeClass('inverted')
+                  // .transition('fade in')
+      // $('.masthead.segment').addClass('enlarged')
+      // $('.masthead.segment').height(window.innerHeight - 300)
+
+
+    },
+    onUnstick: function() {
+      console.log('onUnstick fired!')
+      $('.sticky').removeClass('stuck')
+      $('.sticky').find('.pointing.menu').addClass('inverted')
+      // $('.masthead.segment').removeClass('enlarged')
+      // $('.masthead.segment').height(window.innerHeight - 100)
+
+    },
+    onTop: function(){
+      console.log('on top')
+    },
+    onBottom: function(){
+      console.log('on bottom')
+    },
   })
+
+// init tabs
+$('.tabular.menu .item')
+  .tab()
+
 
 // init images lazy-loading
 $('img.transition.visible')
@@ -55,8 +90,8 @@ $('img.transition.visible')
    duration: ' 1000',
    onTopVisible :function(calcs) {
      // lazy-loading - adds data-src attribute to the img tag
-     getImg()
-     showContent()
+     getImg();
+     showContent();
    }
  })
 
@@ -82,5 +117,4 @@ var getImg = function(){
   return $('img.transition.visible').each( function( index, value ) {
     $(value).attr('data-test', arImg[index])
   })
-
 }

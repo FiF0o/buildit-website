@@ -1,22 +1,20 @@
 header#header
-    .ui.inverted.vertical.masthead.center.aligned.segment
-
+    .row
         .ui.sticky.fixed.top
+            .ui.secondary.inverted.pointing.menu
+                a.toc.item
+                    i.sidebar.icon
+                a.image.item
+                    img#logo(src='images/buildit-logo-white.svg', alt='Buildit', data-svg-fallback='images/buildit-logo-white.png',href='index.html')
 
-            .ui.container
-                .ui.large.secondary.inverted.pointing.menu
-                    a.toc.item
-                        i.sidebar.icon
-                    a.image.item
-                        img#logo(src='images/buildit-logo-white.svg', alt='Buildit', data-svg-fallback='images/buildit-logo-white.png')
-
-                    .right.item
-                        a.active.item(href='index.html') Home
-                        a.item(href='buildit.html') Company
-                        a.item(href='careers.html') Careers
-                    //.right.item
-                    //    a.ui.inverted.button Github
-            .ui.text.container
-                h1.ui.inverted.header
-                    //img(src='images/buildit-logo-only-paths.svg')
-                    |         the future belongs to those who make
+                .right.item
+                    a.active.item(href='index.html') Build
+                    a.item(href='index.html') People
+                    a.item(href='careers.html') Contact
+                //.right.item
+                //    a.ui.inverted.button Github
+    .row
+        .ui.text.container
+            h1.ui.inverted.header#tagline
+                //img(src='images/buildit-logo-only-paths.svg')
+                |         the future belongs to those who make

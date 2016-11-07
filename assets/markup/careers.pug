@@ -8,9 +8,92 @@ block header
     include includes/head
 
 block content
-    #container.ui.main.text.container
-        h1.ui.header Careers
-        p This is a basic fixed menu template using fixed size containers.
+    #container
+        .row.center.centered
+            h1.ui.header Careers
+            p This is a basic fixed menu template using fixed size containers.
+
+        .bloc.center.aligned
+            | Blablablabladsadasdasdasdafsfdsfdsfdsfsd
+
+        .ui.center.aligned.stackable.grid
+            .row
+                | row ui center aligned
+
+        button.ui.secondary.button Button
+        button.ui.secondary.large.button Large Button
+
+        .ui.inverted.segment
+            button.ui.inverted.secondary.huge.button Large Inverted Button
+
+        .ui.equal.width.center.aligned.padded.grid.stackable
+            .row
+                .olive.column
+                    | Olive
+                .black.column
+                    | Black
+
+            .row
+                .column
+                    | People 1
+
+                .column
+                    | people 2
+                .column
+                    | people 3
+
+            //.row
+            //    .ui.embed(data-url='http://www.myfav.es/jack', data-placeholder='/images/image-16by9.png', data-icon='right circle arrow')
+            //
+            //
+            //.row
+            //    .ui.embed(data-source='youtube', data-id='O6Xo21L0ybE', data-placeholder='/images/image-16by9.png')
+
+
+            .row(style='background-color: #869D05;color: #FFFFFF;')
+                .column Custom Row
+
+            .row
+                .black.column
+                    | Black
+                .olive.column
+                    | Olive
+
+        .ui.four.column.doubling.stackable.grid.container
+            .column
+                p 1
+                p 2
+            .column
+                p 3
+                p 4
+            .column
+                p 1
+                p 2
+            .column
+                p 3
+                p 4
+
+        .ui.tabular.menu
+            a.item.active(data-tab='tab-name') Tab Name
+            a.item(data-tab='tab-name2') Tab Name 2
+            a.item(data-tab='tab-name3') Tab Name 3
+        .ui.tab.active(data-tab='tab-name')
+            // Tab Content !
+            | Tab Content 1
+        .ui.tab(data-tab='tab-name2')
+            | Tab Content 2
+        .ui.tab(data-tab='tab-name3')
+            | Tab Content 3
+
+        //.ui.grid.stackable
+        //    .four.column
+        //        .ui.vertical.menu
+        //            a.item.active item 1
+        //            a.item item 2
+        //            a.item item 3
+        //    .eight.column
+        //        | blalbalblablafsfsdfdsfsd
+
 
 
 block foot

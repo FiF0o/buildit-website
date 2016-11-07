@@ -1,9 +1,10 @@
 require 'semantic-ui-sass'
+# on first install
 # compass install semantic-ui
 
 
 # require 'semantic-ui-sass'
-require 'compass/import-once/activate'
+# require 'compass/import-once/activate'
 # Require any additional compass plugins here.
 
 # configuration: http://compass-style.org/help/documentation/configuration-reference/

@@ -1,7 +1,10 @@
+/* Sprite */
 i.flag:not(.icon):before {
     display: inline-block;
     content: '';
-    background: image-url("semantic-ui/flags.png") no-repeat -108px -1976px;
+    //background: url("./../themes/default/assets/images/flags.png") no-repeat -108px -1976px;
+    //background: url("../../images/flags.png") no-repeat -108px -1976px;
+    background: url("dist/images/semantic-ui/flags.png") no-repeat -108px -1976px;
     width: 16px;
     height: 11px;
 }

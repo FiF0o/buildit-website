@@ -82,7 +82,7 @@
     "deploy:prod": "s3-cli sync ./dist/ s3://example-com/prod-site/",
     "deploy:stage": "s3-cli sync ./dist/ s3://example-com/stage-site/",
     "serve": "http-server dist/ -p 9090 ",
-    "live-reload": "live-reload dist/ --port 9091 --delay 500",
+    "live-reload": "live-reload dist/ --port 9091 --delay 2500",
     "dev": "npm run open:dev -s && parallelshell \"npm run live-reload -s\" \"npm run serve -s\" \"npm run watch -s\""
   },
   "eslintConfig": {

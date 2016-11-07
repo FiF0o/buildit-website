@@ -1,6 +1,35 @@
 @import semantic-ui
 @import fonts
 
+.stuck
+  margin: 0 auto
+  padding: 0px 1.5em
+  color: black
+  background-color: rgba(255,255,255, .8)
+
+#header
+  background-color: black
+  width: 100%
+  max-height: calc(100% - 80px)
+  height: auto
+  min-height: calc(20% - 20px)
+  background-image: url(images/simple.svg), url(images/bg.jpg)
+  background-repeat: no-repeat, repeat-x
+  background-color: rgba(0, 0, 0, 1)
+  //background-size: 100%
+  background-size: cover
+
+#tagline
+  padding: 3em 0 5em 0
+
+#container
+  margin-top: 40px
+
+#logo
+  padding-left: 3em
+
+.column
+  padding: 30px 0px
 /************************************/
 /******** OVERRIDES START HERE ******/
 /************************************/
@@ -15,11 +44,13 @@
 
 // 1 - Imports to override semantic-ui elements
 // @import elements/
+@import elements/flags
 
 
 
 // 2 - Imports from semantic-ui collections for overrides
 @import collections/_bloc
+@import collections/_tab
 
 
 
@@ -58,24 +89,32 @@ footer
 .hidden.menu
   display: none
 
+//.enlarged
+//  min-height: 560px
 .masthead
   &.segment
-    min-height: 560px
+    min-height: 70%
+//.masthead
+//  &.segment
+  // increases size of background image
     padding: 1em 0em
-  .logo.item img
-    margin-right: 1em
-  .ui.menu .ui.button
-    margin-left: 0.5em
-  h1.ui.header
-    margin-top: 20%
-    margin-bottom: 0em
-    font-size: 3vw
-    font-weight: normal
-    text-align: center
-    text-transform: uppercase
-  h2
-    font-size: 1.7em
-    font-weight: normal
+    max-height: 80%
+    height: 60%
+    min-height: 40%
+.logo.item img
+  margin-right: 1em
+.ui.menu .ui.button
+  margin-left: 0.5em
+h1.ui.header
+  //padding: 20% 0 5% 0
+  //margin-bottom: 0em
+  font-size: 3vw
+  font-weight: normal
+  text-align: center
+  text-transform: uppercase
+h2
+  font-size: 1.7em
+  font-weight: normal
 
 .ui.vertical.stripe
   padding: 8em 0em
@@ -112,7 +151,7 @@ footer
       display: block
   .masthead
     &.segment
-      min-height: 350px
+      min-height: 30%
     h1.ui.header
       font-size: 2em
       margin-top: 1.5em
