@@ -1,4 +1,7 @@
 # Buildit website
+- Hack to fix...
+works: docker run -p 3333:9090 -itd jonlazarini/trompettini /bin/bash && npm run build && npm run serve
+
 
 ## Pre-requisites
 
