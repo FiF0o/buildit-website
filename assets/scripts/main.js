@@ -3,6 +3,15 @@ import visibility from './semantic-ui/visibility'
 import sticky from './semantic-ui/sticky'
 import sidebar from './semantic-ui/sidebar'
 import tab from './semantic-ui/tab'
+import embed from './semantic-ui/embed'
+
+// const mapsapi = require('google-maps-api')('AIzaSyA6sewibZttvy8MGL3DulCWV361VBD-zpg')
+
+
+var GoogleMapsLoader = require('google-maps');
+console.log(GoogleMapsLoader)
+
+GoogleMapsLoader.KEY = 'AIzaSyA6sewibZttvy8MGL3DulCWV361VBD-zpg'
 
 /**
  * jQuery is a global which is augmented by semantic-ui library and expects to
@@ -118,3 +127,125 @@ var getImg = function(){
     $(value).attr('data-test', arImg[index])
   })
 }
+
+
+
+
+/****************************
+ *   MAPS
+ *
+ ****************************/
+
+var position = [53.3305221, -6.2281275]; // Alexandra House, Ballsbridge Business Park, Ballsbridge Park, Merrion Rd, Dublin Southside, Dublin 4, Ireland
+// var position = [51.5285097, -0.0923402]; // 186 City Rd, London EC1V 2NT
+// var position = [51.5182121, -0.0917254]; // 1 Fore Street, London, UK
+// var position = [40.755689,-73.9857537]; // 1114 Ave of the Americas #3030, New York, NY 10018, USA
+
+
+// $('.ui.embed').embed();
+
+const position1 = {lat: -53.3305221, lng: -6.2281275}
+var position2 = {lat: 51.5285097,  lng: -0.0923402};
+var position3 = {lat: 51.5182121,  lng: -0.0917254};
+var position4 = {lat: 40.755689, lng: -73.9857537};
+var position5 = {lat:39.7525339, lng: -105.0053551};
+var position6 = {lat:39.7525339, lng: -105.0053551};
+
+// mapsapi().then( function( maps ) {
+//   console.log('maps:', maps)
+//
+//   const map = new maps.Map(document.getElementsById('map'), {
+//     zoom: 4,
+//     center: uluru
+//   })
+//
+//
+//   console.log('map', map)
+//
+//   // maps.event.addDomListener(window, 'load', initMap);
+//
+//
+// });
+
+
+GoogleMapsLoader.load(function(google) {
+
+  const loadMap1 = function() {
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 4,
+      center: position1
+    });
+    var marker = new google.maps.Marker({
+      position: position1,
+      map: map
+    });
+  }
+  google.maps.event.addDomListener(window, 'load', loadMap1);
+
+
+  const loadMap2 = function() {
+    var map2 = new google.maps.Map(document.getElementById('map2'), {
+      zoom: 4,
+      center: position2
+    });
+    var marker = new google.maps.Marker({
+      position: position2,
+      map: map2
+    });
+  }
+  google.maps.event.addDomListener(window, 'load', loadMap2);
+
+  const loadMap3 = function() {
+    var map3 = new google.maps.Map(document.getElementById('map3'), {
+      zoom: 4,
+      center: position3
+    });
+    var marker = new google.maps.Marker({
+      position: position3,
+      map: map3
+    });
+  }
+  google.maps.event.addDomListener(window, 'load', loadMap3);
+
+  const loadMap4 = function() {
+    var map4 = new google.maps.Map(document.getElementById('map4'), {
+      zoom: 4,
+      center: position4
+    });
+    var marker = new google.maps.Marker({
+      position: position4,
+      map: map4
+    });
+  }
+  google.maps.event.addDomListener(window, 'load', loadMap4);
+
+  const loadMap5 = function() {
+    var map5 = new google.maps.Map(document.getElementById('map5'), {
+      zoom: 4,
+      center: position5
+    });
+    var marker = new google.maps.Marker({
+      position: position5,
+      map: map5
+    });
+  }
+  google.maps.event.addDomListener(window, 'load', loadMap5);
+
+  const loadMap6 = function() {
+    var map6 = new google.maps.Map(document.getElementById('map6'), {
+      zoom: 4,
+      center: position6
+    });
+    var marker = new google.maps.Marker({
+      position: position6,
+      map: map6
+    });
+  }
+  google.maps.event.addDomListener(window, 'load', loadMap6);
+
+
+});
+
+
+// $('#header_contact').css("background-image", "url(images/shutterstock/shutterstock_221064886.jpg)");
+

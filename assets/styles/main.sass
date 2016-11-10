@@ -21,6 +21,11 @@
   //background-size: 100%
   background-size: cover
 
+#header_contact
+  @extend #header
+  background-image: url(images/shutterstock/shutterstock_221064886.jpg)
+
+
 #tagline
   padding: 3em 0 5em 0
 
@@ -171,7 +176,8 @@ h2
 @media only screen and (min-width: 1200px)
   .cities
     text-align: initial
-    /* float: right;
+    //float: right
+    padding-bottom: 5em
     font-size: 2.4em
     min-height: 20vh
     line-height: 3rem
@@ -406,3 +412,23 @@ h2
 
 
 /** END
+
+
+/** IFRAME
+
+.map
+  margin: 0 auto
+  padding: 0
+
+.embed-container
+  position: relative
+  padding-bottom: 56.25%
+  height: 0
+  overflow: hidden
+  max-width: 100%
+  iframe, object, embed
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%

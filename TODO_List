@@ -4,6 +4,7 @@ TODO List
 - lazy loading images
 - uppercase on heading in footer
 - Refactor (copy/paste) sass into modules
+- Add links header
 
 #Index
 - Fix container in index page centering everything just before footer
