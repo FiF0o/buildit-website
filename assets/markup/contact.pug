@@ -9,6 +9,30 @@ block header
 
 block content
     #container
+        .ui.vertical.stripe.make.segment
+            .ui.top.aligned.stackable.grid.container
+                .row
+                    .eight.wide.column
+                        h3.ui.header Where we are
+                        h4#london London
+                        p
+                            a(href='https://goo.gl/maps/UwuaQ5FQw7t', target='_blank') 186 City Road, London, EC1V 2NT
+                        p
+                            a(href='https://goo.gl/maps/Qgz612zt16m', target='_blank') 1 Fore Street, London, EC2Y 9DT
+                        h4#dublin Dublin
+                        p
+                            a(href='https://goo.gl/maps/6uNcV8WHugJ2', target='_blank') Alexandra House, 3 Ballsbridge Park, Dublin 4
+                        h4#edinburgh Edinburgh
+                        p
+                            a(href='https://goo.gl/maps/hqHR5X9Ery12', target='_blank') Somewhere, Edinburgh
+                    .eight.wide.column
+                        h3.ui.header  
+                        h4#new-york New York
+                        p
+                            a(href='https://goo.gl/maps/RQEiME54EbF2', target='_blank') 1114 Avenue of the Americas, Suite 3030, New York, NY 10110
+                        h4#denver Denver
+                        p
+                            a(href='https://goo.gl/maps/SVB3SNbDewF2', target='_blank') 1550 Wewatta St, Suite 2167, Denver, CO 80202
         .ui.vertical.inverted.stripe.quote.segment
             .ui.equal.width.stackable.internally.celled.grid
                 .right.aligned.row(style='height:60vh')
@@ -57,6 +81,21 @@ block content
                     .column(style='background-image:url(assets/images/edinburgh.jpg);background-size: cover;font-size:140%;padding-top:45vh')
                         h3 EDINBURGH
                         p Alexandra House, 3 Ballsbridge Park, Dublin 4
+
+
+
+
+
+
+        .cities
+            .glitch2.ldn(data-text='LONDON') LONDON
+            .glitch.nyc(data-text='NEW YORK') NEW YORK
+            .glitch.den(data-text='DENVER') DENVER
+            .glitch2.edi(data-text='EDINBURGH') EDINBURGH
+            .glitch.dub(data-text='DUBLIN') DUBLIN
+
+
+
 
 
 
