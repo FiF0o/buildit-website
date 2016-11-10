@@ -1,0 +1,136 @@
+extends templates/layout
+
+block sidebar
+    include includes/sidebar
+
+
+block header
+    include includes/head
+
+block content
+    #container.ui.main.text.container
+        h1.ui.header Semantic UI Fixed Template
+        p This is a basic fixed menu template using fixed size containers.
+        p
+            | A text container is used for the main container, which is useful for single column layouts
+        img.wireframe(src='images/wireframe/media-paragraph.png')
+        img.wireframe(src='images/wireframe/paragraph.png')
+        img.wireframe(src='images/wireframe/paragraph.png')
+        img.wireframe(src='images/wireframe/paragraph.png')
+        img.wireframe(src='images/wireframe/paragraph.png')
+        img.wireframe(src='images/wireframe/paragraph.png')
+        img.wireframe(src='images/wireframe/paragraph.png')
+        img.wireframe(src='images/wireframe/media-paragraph.png')
+        img.wireframe(src='images/wireframe/paragraph.png')
+        img.wireframe(src='images/wireframe/paragraph.png')
+        img.wireframe(src='images/wireframe/paragraph.png')
+        img.wireframe(src='images/wireframe/paragraph.png')
+        img.wireframe(src='images/wireframe/paragraph.png')
+        img.wireframe(src='images/wireframe/paragraph.png')
+
+
+        .ui.divided.demo.items
+            .item
+                .image
+                    img.transition.visible(src='images/wireframe/square-image.png', data-src='images/avatar/stevie.jpg')
+                .content
+                    h2.ui.header Stevie
+                    p
+                    .ui.primary.button Add Friend
+                    .ui.right.floated.button
+                        | View
+                        i.right.chevron.icon
+            .item
+                .image
+                    img.transition.visible(src='images/wireframe/square-image.png', data-src='images/avatar/nan.jpg')
+                .content
+                    h2.ui.header Stevie
+                    p
+                    .ui.primary.button Add Friend
+                    .ui.right.floated.button
+                        | View
+                        i.right.chevron.icon
+
+            .item
+                .image
+                    img.transition.visible(src='images/wireframe/square-image.png', data-src='images/avatar/tom.jpg')
+                .content
+                    h2.ui.header Stevie
+                    p
+                    .ui.primary.button Add Friend
+                    .ui.right.floated.button
+                        | View
+                        i.right.chevron.icon
+
+
+
+
+
+            .ui.vertical.stripe.fractal.segment
+                .ui.top.aligned.stackable.grid.container
+                    .row
+                        .eight.wide.column
+                            h3.ui.header Who we are
+                            p
+                                | Buildit is a transformation studio. We are a company that helps create better companies. We partner with our clients to build innovative product-service experiences, and help high calibre development teams to scale independently.
+                        .six.wide.right.floated.column
+                            .ui.fluid.animated.fade.huge.blue.basic.button(tabindex='0')
+                                .visible.content Experience Led
+                                .hidden.content
+                                    i.cogs.icon
+                                    |  Experience Led
+                            .ui.hidden.divider.values
+                            .ui.fluid.animated.huge.blue.basic.button(tabindex='0')
+                                .visible.content High Velocity
+                                .hidden.content
+                                    | High Velocity
+                                    i.right.arrow.icon
+                            .ui.hidden.divider.values
+                            .ui.fluid.animated.fade.huge.blue.basic.button(tabindex='0')
+                                .visible.content Engineering Discipline
+                                .hidden.content
+                                    i.code.icon
+                                    |  Engineering Discipline
+                    .row
+                        .ten.wide.column
+                            h3.ui.header We make Workflows that can Dance
+                            p
+                                | Yes that's right, you thought it was the stuff of dreams, yet our engineers can tranform your most complex procedures and pipelines with you.
+            .ui.vertical.stripe.quote.segment
+                .ui.equal.width.stackable.internally.grid
+                    .left.aligned.row
+                        .column(style='padding:5em')
+                            img.ui.image(data-src='assets/images/Layer-2.png', width='80%')
+                        .column
+                            h3 From Alpha to Omega
+                            p Blablaba
+                            p Blablaba
+                            p Blablaba
+                            p Blablaba
+                            h3 "I shouldn't have gone with their competitor."
+                            p
+                                img.ui.avatar.image(data-src='assets/images/avatar/nan.jpg')
+                                b Nan
+                                |  Chief Fun Officer Acme Toys
+            .ui.vertical.stripe.segment
+                .ui.text.container
+                    h3.ui.header Breaking The Grid, Grabs Your Attention
+                    p
+                        | Instead of focusing on content creation and hard work, we have learned how to master the art of doing nothing by providing massive amounts of whitespace and generic content that can seem massive, monolithic and worth your attention.
+                    a.ui.large.button Read More
+                    h4.ui.horizontal.header.divider
+                        a(href='#') Case Studies
+                    h3.ui.header Did We Tell You About Our Bananas?
+                    p
+                        | Yes I know you probably disregarded the earlier boasts as non-sequitur filler content, but its really true. It took years of gene splicing and combinatory DNA research, but our bananas can really dance.
+                    a.ui.large.button I'm Still Quite Interested
+
+
+
+block foot
+    include includes/foot
+
+block scripts
+    include includes/scripts
+
+

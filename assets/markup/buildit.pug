@@ -1,0 +1,88 @@
+extends templates/layout
+
+block sidebar
+    include includes/sidebar
+
+
+block header
+    include includes/head
+
+block content
+    #container
+        .ui.vertical.stripe.fractal.segment
+            .ui.top.aligned.stackable.grid.container
+                .row
+                    .eight.wide.column
+                        h3.ui.header Who we are
+                        p
+                            | Buildit is a transformation studio, a company that helps create better companies. We partner with clients to build new products and services, and help their teams scale independently.
+                        p
+                            | Our clients know that there's a better way to deliver software, but aren't always sure what it is, or how to get there.
+                        p
+                            | We understand that organisational transformation is a journey and not a single event. When they are ready to change, we help them.
+                        p We are not a consultancy, and not an outsourcer.
+                    .eight.wide.column
+                        h3.ui.header  
+                        p
+                            | We are a hands-on partner that participates and cares about the detail, and we recognise that real change comes from people doing things differently. The Buildit team invests significantly with every client we work with, focusing on getting things done and helping prove a method and a model to unlock future speed and scale.
+                        p We specialise in customer centricity and high calibre engineering.
+                        p
+                            | We have done this before, transforming large organisations with millions of users. And now we’re applying what we’ve learned to help create the next generation of business.
+                        p
+        .ui.inverted.quote.stripe.center.aligned.segment
+            .row(style='background-image:url(images/grid-left-buildit.svg),url(images/partners.jpg);background-size: 50%,cover;max-height:60vh;height:60vh;')
+                h2(style='font-size:600%; padding-top:28vh;') Partners to share your vision
+        .ui.vertical.stripe
+            .ui.top.aligned.stackable.grid.container
+                .row
+                    .eight.wide.column
+                        h3.ui.header Our Approach
+                        p We hunger to change the way companies think and approach problems.
+                        p
+                            | We are genuinely curious about business, UX, strategy, social and behavioural factors.
+                        p
+                            | We enjoy owning the entire problem, whether it’s about technology, ways of working, teams, or poor customer experience.
+                        p
+                            | We appreciate that engineering is a key piece of a bigger puzzle, understanding the other pieces and ‘the whole’.
+                        p
+                            | We enjoy finding ways to make complicated tasks easy, eliminating things that aren’t valuable and automating things that are.
+                    .eight.wide.column
+                        p
+                            img.zoom.image(src='images/cynefin_1.svg' data-src='images/cynefin_1.svg')
+        .ui.inverted.quote.stripe.left.aligned.segment
+            .row(style='font-size:200%;background-image:url(images/simple.svg),url(images/strive.jpg);background-size: cover;max-height:60vh;height:60vh;')
+                h2(style='font-size:200%; padding-top:8vh;padding-left:10vw;padding-bottom:2vh') Strive for
+                p(style='padding-left:10vw') Rapidly releasing small increments of functionality
+                p(style='padding-left:14vw') Using automated Dev. Ops style delivery techniques
+                p(style='padding-left:11vw') Verifying functionality via automated validation tools
+                p(style='padding-left:15vw') Embedding metrics to support feedback and decision making
+        .ui.vertical.stripe
+            .ui.top.aligned.stackable.grid.container
+                .row
+                    h4.ui.horizontal.header.divider
+                        a(href='#') How we make
+                    .eight.wide.column
+                        p BIG IMAGE
+                    .eight.wide.column
+                        p
+                            | We work as cross-functional teams that share a passion for solving complex problems.
+                        p
+                            | Our colleagues are egoless peers that enjoy listening, learning, and sharing as part of a flat organisation. They are polyglots who enjoy looking at what’s happening, what’s needed, and figure out how they fit into it. They seek input when they want to make a decision that will affect others, or when others know more than they do.
+                        p
+                            | They can often be heard saying “it’s good enough” and “let’s ship it”, but also “what is our goal?” and “this should be nowhere near production”.
+                        p We encourage everyone to bring their personality to work.
+                    h3.ui.header Did We Tell You About Our Bananas?
+                    p
+                        | Yes I know you probably disregarded the earlier boasts as non-sequitur filler content, but its really true. It took years of gene splicing and combinatory DNA research, but our bananas can really dance.
+                    a.ui.large.button Our values
+
+
+
+
+block foot
+    include includes/foot
+
+block scripts
+    include includes/scripts
+
+

@@ -1,0 +1,43 @@
+extends templates/layout
+
+block sidebar
+    include includes/sidebar
+
+
+block header
+    include includes/head
+
+block content
+    #container
+        .ui.grid.center.aligned
+            .row
+                h2.ui.header People
+            .row
+                h3.ui.header This is a basic fixed menu template using fixed size containers.
+
+        .ui.equal.width.center.aligned.padded.grid.stackable
+            .row
+                .column
+                    | People 1
+                .column
+                    | people 2
+                .column
+                    | people 3
+
+            .row(style='background-color: #869D05;color: #FFFFFF;')
+                .column Custom Row
+
+            .row
+                .black.column
+                    | Black
+                .olive.column
+                    | Olive
+
+
+block foot
+    include includes/foot
+
+block scripts
+    include includes/scripts
+
+

@@ -9,90 +9,99 @@ block header
 
 block content
     #container
-        .row.center.centered
-            h1.ui.header Careers
-            p This is a basic fixed menu template using fixed size containers.
-
-        .bloc.center.aligned
-            | Blablablabladsadasdasdasdafsfdsfdsfdsfsd
-
-        .ui.center.aligned.stackable.grid
-            .row
-                | row ui center aligned
-
-        button.ui.secondary.button Button
-        button.ui.secondary.large.button Large Button
-
-        .ui.inverted.segment
-            button.ui.inverted.secondary.huge.button Large Inverted Button
-
-        .ui.equal.width.center.aligned.padded.grid.stackable
-            .row
-                .olive.column
-                    | Olive
-                .black.column
-                    | Black
-
-            .row
-                .column
-                    | People 1
-
-                .column
-                    | people 2
-                .column
-                    | people 3
-
-            //.row
-            //    .ui.embed(data-url='http://www.myfav.es/jack', data-placeholder='/images/image-16by9.png', data-icon='right circle arrow')
-            //
-            //
-            //.row
-            //    .ui.embed(data-source='youtube', data-id='O6Xo21L0ybE', data-placeholder='/images/image-16by9.png')
-
-
-            .row(style='background-color: #869D05;color: #FFFFFF;')
-                .column Custom Row
-
-            .row
-                .black.column
-                    | Black
-                .olive.column
-                    | Olive
-
-        .ui.four.column.doubling.stackable.grid.container
-            .column
-                p 1
-                p 2
-            .column
-                p 3
-                p 4
-            .column
-                p 1
-                p 2
-            .column
-                p 3
-                p 4
-
-        .ui.tabular.menu
-            a.item.active(data-tab='tab-name') Tab Name
-            a.item(data-tab='tab-name2') Tab Name 2
-            a.item(data-tab='tab-name3') Tab Name 3
-        .ui.tab.active(data-tab='tab-name')
-            // Tab Content !
-            | Tab Content 1
-        .ui.tab(data-tab='tab-name2')
-            | Tab Content 2
-        .ui.tab(data-tab='tab-name3')
-            | Tab Content 3
-
-        //.ui.grid.stackable
-        //    .four.column
-        //        .ui.vertical.menu
-        //            a.item.active item 1
-        //            a.item item 2
-        //            a.item item 3
-        //    .eight.column
-        //        | blalbalblablafsfsdfdsfsd
+        .ui.vertical.stripe.segment
+            .ui.top.aligned.stackable.grid.container
+                .row
+                    .eight.wide.column
+                        h3.ui.header Why us?
+                        p
+                            | Do you think there’s something lacking in how many companies approach problems, whether they’re people, process, or technology related?
+                        p Do you want to help them figure out how to think and work differently?
+                        p
+                            | Do you love technology, and understand that real change comes from people doing different things, rather than people doing the same things differently?
+                        p These are the things that drive us. Do they drive you?
+                        .ui.animated.fade.basic.medium.button(tabindex='0')
+                            .visible.content
+                                i.icon.user
+                                |  Agile Delivery
+                            .hidden.content
+                                i.right.arrow.icon
+                                |  See specs
+                        .ui.animated.fade.basic.medium.button(tabindex='0')
+                            .visible.content
+                                i.icon.user
+                                | Javascript Dev
+                            .hidden.content
+                                i.right.arrow.icon
+                                |  All rounder
+                        .ui.animated.fade.basic.medium.button(tabindex='0')
+                            .visible.content
+                                i.icon.user
+                                | Mobile Dev
+                            .hidden.content
+                                i.right.arrow.icon
+                                |  iOS & Android
+                        .ui.animated.fade.basic.medium.button(tabindex='0')
+                            .visible.content
+                                i.icon.user
+                                | Platform Dev
+                            .hidden.content
+                                i.right.arrow.icon
+                                |  Pipelines
+                    .eight.wide.column
+                        h3.ui.header Why you?
+                        p
+                            | We are looking for people who want to help us change the way companies think and approach problems; people who want to work with teams and individuals who share a passion for solving complex problems; people who want to own the entire problem, whether it’s about technology, ways of working, teams, or customer experience.
+                        p
+                            | We are looking for people who want to be treated like adults; people who neither need, nor want, someone else to tell them what needs to be done, but instead who can look at what’s happening, what’s needed, and figure out how they fit into it; people who are comfortable finding their own place.
+                        p
+                            | We are looking for people who want to work in cross-functional teams, and want to help others learn how to build them, and why they're valuable; people who understand when cloud technology is beneficial, and when it isn't; people with a grasp of a variety of technologies, languages, and methodologies, along with their pros and cons.
+        .ui.vertical.stripe.quote.segment
+            .ui.equal.width.stackable.internally.celled.grid
+                .center.aligned.row(style='background-image:url(assets/images/grid-left-buildit.svg); background-repeat:no-repeat')
+                    .column(style='margin-bottom: -77px;')
+                        h3 "What a Company"
+                        p That is what they all say about us
+                        //TODO Optimise with  lazy loading and needs to be dynamic, we can store names in a json or somewhere else
+                        .ui.tiny.images
+                            img.ui.image.bottom.aligned(src='images/team/mike.png' data-src='images/team/mike.png')
+                            img.ui.image.bottom.aligned(src='images/team/yannis.png' data-src='images/team/yannis.png')
+                            img.ui.image.bottom.aligned(src='images/team/david.png' data-src='images/team/david.png')
+                            img.ui.image.bottom.aligned(src='images/team/mattc.png' data-src='images/team/mattc.png')
+                            img.ui.image.bottom.aligned(src='images/team/dermot.png' data-src='images/team/dermot.png')
+                            img.ui.image.bottom.aligned(src='images/team/punith.png' data-src='images/team/punith.png')
+                            img.ui.image.bottom.aligned(src='images/team/gisnalbert.png' data-src='images/team/gisnalbert.png')
+                            img.ui.image.bottom.aligned(src='images/team/jonathan.png' data-src='images/team/jonathan.png')
+                            img.ui.image.bottom.aligned(src='images/team/urmy.png' data-src='images/team/urmy.png')
+                            img.ui.image.bottom.aligned(src='images/team/panos.png' data-src='images/team/panos.png')
+                            img.ui.image.bottom.aligned(src='images/team/avi.png' data-src='images/team/avi.png')
+                            img.ui.image.bottom.aligned(src='images/team/richard.png' data-src='images/team/richard.png')
+                            img.ui.image.bottom.aligned(src='images/team/rory.png' data-src='images/team/rory.png')
+                            img.ui.image.bottom.aligned(src='images/team/oli.png' data-src='images/team/oli.png')
+                            img.ui.image.bottom.aligned(src='images/team/lucio.png' data-src='images/team/lucio.png')
+                            img.ui.image.bottom.aligned(src='images/team/uros.png' data-src='images/team/uros.png')
+                            img.ui.image.bottom.aligned(src='images/team/claire.png' data-src='images/team/claire.png')
+                            img.ui.image.bottom.aligned(src='images/team/james.png' data-src='images/team/james.png')
+                            img.ui.image.bottom.aligned(src='images/team/marcos.png' data-src='images/team/marcos.png')
+        .ui.vertical.stripe.segment
+            .ui.top.aligned.stackable.grid.container
+                .row
+                    .eight.wide.column
+                        h3.ui.header Our clients
+                        p
+                            | Our clients deliver traditional software in traditional ways. They know there's a better way to do things, but aren't always sure what it is, or how to get there.
+                        p When they are ready to change, we help them.
+                    .eight.wide.column
+                        p
+                            | Our clients are looking for people who understand delivery pipelines; people who know how to smooth the process of moving from development to production; people who are capable of adapting to whatever framework the client needs.
+                        p
+                            | Our clients are looking for people who can advise them on different ways to approach problems; people who can offer pros and cons of a variety of different options, and then help the client figure out what's best for them, in their specific case.
+                        p
+                            | Our clients are looking for people who know that it's often impossible to walk away completely from legacy systems; people who can help create new ways of working for new software, and better ways of working for existing software.
+                h4.ui.horizontal.header.divider
+                    a(href='#')
+                        | Above all, our clients want people who can help them deliver more business value, faster.
+                a.ui.large.button I'm Still Quite Interested
 
 
 
