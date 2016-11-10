@@ -1,7 +1,14 @@
 TODO List
 
+# **
 - lazy loading images
 - uppercase on heading in footer
-- GMap
 - Refactor (copy/paste) sass into modules
+
+#Index
 - Fix container in index page centering everything just before footer
+
+
+# Contact
+- Fix image in header
+- GMap
