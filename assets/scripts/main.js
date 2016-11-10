@@ -3,14 +3,9 @@ import visibility from './semantic-ui/visibility'
 import sticky from './semantic-ui/sticky'
 import sidebar from './semantic-ui/sidebar'
 import tab from './semantic-ui/tab'
-import embed from './semantic-ui/embed'
-
-// const mapsapi = require('google-maps-api')('AIzaSyA6sewibZttvy8MGL3DulCWV361VBD-zpg')
 
 
 var GoogleMapsLoader = require('google-maps');
-console.log(GoogleMapsLoader)
-
 GoogleMapsLoader.KEY = 'AIzaSyA6sewibZttvy8MGL3DulCWV361VBD-zpg'
 
 /**
@@ -136,36 +131,12 @@ var getImg = function(){
  *
  ****************************/
 
-var position = [53.3305221, -6.2281275]; // Alexandra House, Ballsbridge Business Park, Ballsbridge Park, Merrion Rd, Dublin Southside, Dublin 4, Ireland
-// var position = [51.5285097, -0.0923402]; // 186 City Rd, London EC1V 2NT
-// var position = [51.5182121, -0.0917254]; // 1 Fore Street, London, UK
-// var position = [40.755689,-73.9857537]; // 1114 Ave of the Americas #3030, New York, NY 10018, USA
-
-
-// $('.ui.embed').embed();
-
 const position1 = {lat: -53.3305221, lng: -6.2281275}
 var position2 = {lat: 51.5285097,  lng: -0.0923402};
 var position3 = {lat: 51.5182121,  lng: -0.0917254};
 var position4 = {lat: 40.755689, lng: -73.9857537};
 var position5 = {lat:39.7525339, lng: -105.0053551};
 var position6 = {lat:39.7525339, lng: -105.0053551};
-
-// mapsapi().then( function( maps ) {
-//   console.log('maps:', maps)
-//
-//   const map = new maps.Map(document.getElementsById('map'), {
-//     zoom: 4,
-//     center: uluru
-//   })
-//
-//
-//   console.log('map', map)
-//
-//   // maps.event.addDomListener(window, 'load', initMap);
-//
-//
-// });
 
 
 GoogleMapsLoader.load(function(google) {
@@ -245,7 +216,3 @@ GoogleMapsLoader.load(function(google) {
 
 
 });
-
-
-// $('#header_contact').css("background-image", "url(images/shutterstock/shutterstock_221064886.jpg)");
-
