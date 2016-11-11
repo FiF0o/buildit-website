@@ -1,0 +1,125 @@
+extends templates/layout
+
+block sidebar
+    include includes/sidebar
+
+
+block header
+    include includes/head
+
+block content
+    #container
+        .ui.vertical.stripe
+            .ui.top.aligned.stackable.grid.container
+                .row
+                    .eleven.wide.column
+                        h3.ui.header Why are we doing this?
+                        p
+                            | So where to begin? Before starting the team decided on the founding goals of the website.
+                        p These goals would guide a design that would support the company message.
+                        p The following goals were outlined:
+                        .item(style='font-size:larger')
+                            .middle.aligned.content
+                                i.anchor.icon
+                                |  Be an "anchor" that lets the world know Buildit exists.
+                        .item(style='font-size:larger; margin-top:1.2rem')
+                            .middle.aligned.content
+                                i.rocket.icon
+                                |  Help recruitment by attracting candidates and publishing job specs.
+                        .item(style='font-size:larger; margin-top:1.2rem')
+                            .middle.aligned.content
+                                i.terminal.icon
+                                |  Share white papers with the world to showcase our skills and knowledge.
+                        .item(style='font-size:larger; margin-top:1.2rem')
+                            .middle.aligned.content
+                                i.lab.icon
+                                |  Be a place to start / participate in discussions (e.g. via a blog).
+                    .five.wide.right.aligned.column
+                        h3.ui.header The team
+                        p
+                            | In line with Buildit core principals a small cross functional team was formed to work on the site.
+                        p
+                            | The team consisted of designers, engineers, scrum masters, creative technologists and UX specialists working in agile sprints leading to an incremental delivery of features.
+                .row
+                    h4.ui.horizontal.header.divider
+                        a(href='#') How we make
+                    .fourteen.wide.column
+                        p
+                            | An incremental process was outlined as pivotal to success. Such staged releases would allow the design and architecture emerge in conjunction with the new brand and site
+                        p
+                        p Then soemone asked, all good, but where are the tools?
+                        h2 The Buildit toolbox
+                        p
+                            | At the time of undertaking the project, Buildit had already established its own demonstration space, which featured many pre-established tools.
+                        p The following is a list of these tools, chosen for the project:
+                        ul
+                            li
+                                p
+                                    | [Git (Bitbucket / Github)] - Git has become the de facto standard for collaborative source control. The protocol suits the cross functional teams and distributed arrangement of the company.
+                            li
+                                p
+                                    | [JIRA / Confluence] - JIRA was chosen as the mechanism for tackling sprint development.  Its sister product Confluence also suited the need for project workspaces.
+                            li
+                                p
+                                    | [Jenkins] - Jenkins would allow the addition of new automation pipelines for the website as well as support for any newer build features.
+                            li
+                                p
+                                    | [AWS VPC] - Provides virtual machines, physical storage, registries, hosting and DNS.  AWS offers a huge range of capabilities as well as a low cost mechanism for experimentation and prototyping concepts.
+                            li
+                                p [Docker] - A tool for the creation and execution of software containers.
+                            li
+                                p
+                                    | [Convox] - A tool for orchestrating Docker images / containers for the creation of various environments.
+                            li
+                                p [Node] - Evented I/O for the backend
+                            li
+                                p [Gulp.js] - The streaming build system
+                            li
+                                p
+                                    | [
+                                    a(href='http://Semantic.io') Semantic.io
+                                    | ] - Semantic is a development framework that helps create beautiful, responsive layouts using human-friendly HTML.
+                            li
+                                p [jQuery] - duh
+                        h2 Early architectural decisions
+                        p
+                            | Following an introductory meeting the team made some early decisions regarding the architectural principals for the proposed site:
+                        p
+                            | A living style guide - Buildit is a transformation studio, delivering great user experience with solid engineering principals. Dialog between developer and designer is a crucial part of transforming Buildit customers. A living style guide would allow designers and engineers to collaborate closely using real code and assets rather than static design interpretation. The style guide facilitates clear communication of ideas, a physical repository of assets and the opportunity to reuse code.
+                        p
+                            | Modern website with modern code standards - The website should adhere to as many modern standards as possible without sacrificing usability or access.
+                        p
+                            | Progressive enhancement and graceful degradation - The website should fail gracefully when rendered on devices or browsers incapable of displaying the intended content.
+                        p
+                            | Design similar to our sister company, Designit - Buildit combines two great companies, Buildit and Designit. Designit maintained an existing website. Therefore, as a starting point, it was decided to adopt Designit's general styling and evolve it as the new brand developed.
+                        p
+                            | Project growth and enhancements in an agile fashion - A founding principal of Buildit is to utilise Continuous Delivery and automation. As the site would be an evolutionary process, a pipeline would be required, early on, to facilitate releases. This would mean iterations could be developed, demonstrated and published in gradual increments.
+                        h3 What is a living style guide?
+                        p
+                            | One of the first tasks was to produce the basis for a living style guide. A living style guide is design implemented as functional code.  This is the complete opposite of more traditional design methods, with assets delivered as pictures or manifests.  A living style guide has the huge advantage in that designs can be realised and demonstrated as they would be viewed in production (the same code).  It also means designers and developers can communicate fluently in a single, physical design space.  Designs represented in a living style guide cannot be lost in translation or scattered over requirements documents.  All designs reside and grow in a single style guide, which is used directly by all team members and downstream products.
+                        h2 Atomic Design
+                        p
+                            | To aid development, Atomic Design and CSS principals were employed from the start. Atomic principals, conceived by Brad Frost, break potentially complex design into smaller building blocks.
+                        p
+                            | These building blocks are then used to compose a full design. This concept, especially when combined with a living style guide, makes design easier to understand, test and reuse.
+                            | Buildit > The making of the Buildit website > atomic-design.png
+                        h3 Patternlab: an open source living style guide
+                        p
+                            | Patternlab is an open source tool facilitating Atomic design. It allows designers / developers to write, demonstrate and share components. Operating on NodeJs, PatternLab is simple, lightweight and powerful. It also provides the means to start work with minimal cost and effort.
+                        p
+                            | Please visit the Buildit style guide, implemented using Patternlab, to view all the Atomic elements comprising the Buildit website.
+                    .four.wide.column
+                    h3.ui.header Did We Tell You About Our Bananas?
+                    p
+                        | Yes I know you probably disregarded the earlier boasts as non-sequitur filler content, but its really true. It took years of gene splicing and combinatory DNA research, but our bananas can really dance.
+                    a.ui.large.button Our values
+
+
+
+block foot
+    include includes/foot
+
+block scripts
+    include includes/scripts
+
+

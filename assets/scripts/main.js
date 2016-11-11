@@ -131,12 +131,12 @@ var getImg = function(){
  *
  ****************************/
 
-const position1 = {lat: -53.3305221, lng: -6.2281275}
-var position2 = {lat: 51.5285097,  lng: -0.0923402};
-var position3 = {lat: 51.5182121,  lng: -0.0917254};
-var position4 = {lat: 40.755689, lng: -73.9857537};
-var position5 = {lat:39.7525339, lng: -105.0053551};
-var position6 = {lat:39.7525339, lng: -105.0053551};
+const position1 = {lat: 51.5285097, lng: -0.0923402}
+var position2 = {lat: 51.5182121,  lng: -0.0917254};
+var position3 = {lat: 40.7039934,  lng: -74.0133265};
+var position4 = {lat: 39.7525339, lng: -105.0053551};
+var position5 = {lat:53.3305221, lng: -6.2281275};
+
 
 
 GoogleMapsLoader.load(function(google) {
@@ -201,18 +201,5 @@ GoogleMapsLoader.load(function(google) {
     });
   }
   google.maps.event.addDomListener(window, 'load', loadMap5);
-
-  const loadMap6 = function() {
-    var map6 = new google.maps.Map(document.getElementById('map6'), {
-      zoom: 4,
-      center: position6
-    });
-    var marker = new google.maps.Marker({
-      position: position6,
-      map: map6
-    });
-  }
-  google.maps.event.addDomListener(window, 'load', loadMap6);
-
 
 });
