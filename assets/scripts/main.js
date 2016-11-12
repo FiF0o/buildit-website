@@ -143,7 +143,7 @@ GoogleMapsLoader.load(function(google) {
 
   const loadMap1 = function() {
     var map = new google.maps.Map(document.getElementById('map'), {
-      zoom: 4,
+      zoom: 15,
       center: position1
     });
     var marker = new google.maps.Marker({
