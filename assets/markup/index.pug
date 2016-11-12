@@ -10,7 +10,8 @@ block header
 block content
     #container
 
-        .ui.vertical.stripe.fractal.segment(style="background-image:url(images/grid-buildit-01.svg);")
+        .ui.vertical.stripe.fractal.segment
+            // (style="background-image:url(images/grid-buildit-01.svg);")
             .ui.top.aligned.stackable.grid.container
                 .row
                     .eight.wide.column
@@ -43,7 +44,8 @@ block content
         .ui.vertical.stripe.quote.segment
             .ui.equal.width.stackable.internally.grid
                 .left.aligned.row
-                    .column(style='padding:5em')
+                    .column
+                        // (style='padding:5em')
                         img.ui.image(src='images/layer-app.png', data-src='images/layer-app.png', width='80%')
                     .column
                         h3 From Alpha to Omega

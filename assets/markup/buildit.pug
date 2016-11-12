@@ -30,8 +30,10 @@ block content
                             | We have done this before, transforming large organisations with millions of users. And now we’re applying what we’ve learned to help create the next generation of business.
                         p
         .ui.inverted.quote.stripe.center.aligned.segment
-            .row(style='background-image:url(images/grid-left-buildit.svg),url(images/partners.jpg);background-size: 50%,cover;max-height:60vh;height:60vh;')
-                h2(style='font-size:600%; padding-top:28vh;') Partners to share your vision
+            .row
+                // (style='background-image:url(images/grid-left-buildit.svg),url(images/partners.jpg);background-size: 50%,cover;max-height:60vh;height:60vh;')
+                h2 Partners to share your vision
+                    // (style='font-size:600%; padding-top:28vh;')
         .ui.vertical.stripe
             .ui.top.aligned.stackable.grid.container
                 .row
@@ -51,12 +53,18 @@ block content
                             img.zoom.image(src='images/cynefin_2.svg' data-src='images/cynefin_2.svg')
         //.ui.inverted.quote.stripe.left.aligned.segment
         .sixteen.wide.white.colum
-            .row.strive(style='font-size:200%;background-image:url(images/simple.svg),url(images/strive.jpg);background-size: cover;max-height:60vh;height:60vh;')
-                h2(style='font-size:200%; padding-top:8vh;padding-left:10vw;padding-bottom:2vh') Strive for
-                p(style='padding-left:10vw') Rapidly releasing small increments of functionality
-                p(style='padding-left:14vw') Using automated Dev. Ops style delivery techniques
-                p(style='padding-left:11vw') Verifying functionality via automated validation tools
-                p(style='padding-left:15vw') Embedding metrics to support feedback and decision making
+            .row.strive
+                // style='font-size:200%;background-image:url(images/simple.svg),url(images/strive.jpg);background-size: cover;max-height:60vh;height:60vh;'
+                h2 Strive for
+                    // style='font-size:200%; padding-top:8vh;padding-left:10vw;padding-bottom:2vh'
+                p Rapidly releasing small increments of functionality
+                    // style='padding-left:10vw'
+                p Using automated Dev. Ops style delivery techniques
+                    // style='padding-left:14vw'
+                p Verifying functionality via automated validation tools
+                    // (style='padding-left:11vw')
+                p Embedding metrics to support feedback and decision making
+                    // (style='padding-left:15vw')
         .ui.vertical.stripe
             .ui.top.aligned.stackable.grid.container
                 .row
