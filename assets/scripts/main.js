@@ -5,8 +5,9 @@ import sidebar from './semantic-ui/sidebar'
 import tab from './semantic-ui/tab'
 
 
+import token from '../../token'
 var GoogleMapsLoader = require('google-maps');
-GoogleMapsLoader.KEY = 'AIzaSyA6sewibZttvy8MGL3DulCWV361VBD-zpg'
+GoogleMapsLoader.KEY = token.google
 
 /**
  * jQuery is a global which is augmented by semantic-ui library and expects to
