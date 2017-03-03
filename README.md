@@ -3,26 +3,6 @@ Static website using npm scripts (cli version) to build assets.</br>
 pug/jade, semantic-ui are used as front-end.</br>
 A docker container will be provided for local development.
 
-<<<<<<< HEAD
-...Live server runs on port 9090...
-
-# Build
-`run docker run -p 9090:<YOUR_PORT> -it jonlazarini/bldt-website`
-
-
-# Dev
- `docker run -p <YOUR_PORT>:9090 -it jonlazarini/bldt-website /bin/bash npm run serve`
- `git checkout prod` for the most recent version
-
-
-## npm scripts
-see package json
-`npm run dev`
-`npm run build`
-
-## Notes
-Some notes to be added
-=======
 ## Pre-requisites
 `assets` dir contains your source code.</br>
 `assets/scripts/main.js` is the entrypoint</br></br>
@@ -48,7 +28,6 @@ exposes port :3030 from container to the client which maps http-server (:9090) f
 
 ### spinning up a container
 `docker run -i -t <container ID | NAME> /bin/bash`
->>>>>>> 4a321f05600f1669e41a5538982ff01e92ce4ab5
 
 
 ## Improvements
