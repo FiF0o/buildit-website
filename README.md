@@ -39,6 +39,7 @@ exposes port :3030 from container to the client which maps http-server (:9090) f
 
 #### Other
 `npm run sass-convert` can be used if you wish to convert scss files from `scss` to `sass`.</br></br></br>
-**<br>
+**
+<br>
 **Build process inspired by [how to use NPM as a build tool][post] from Keith Cirkel.**</br>
 **
